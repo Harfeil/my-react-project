@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Employee({ employees, index }) {
+export default function Employee({ employees, id }) {
   return (
     <tr>
-      <td>{index + 1}</td>
+      <td>{id + 1}</td>
       <td>{employees.name}</td>
       <td>{employees.position}</td>
       <td>{employees.status === "Not Active" ? " " : employees.salary}</td>

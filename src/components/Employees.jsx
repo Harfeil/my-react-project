@@ -57,8 +57,10 @@ export default function Employees() {
         </tr>
       </thead>
       <tbody>
-        {employees.map((employee, index) => (
-          <Employee key={index} index={index} employees={employee} />
+        {employees.map((employee, id) => (
+          <>
+            <Employee key={id} id={id} employees={employee} />
+          </>
         ))}
       </tbody>
     </table>
